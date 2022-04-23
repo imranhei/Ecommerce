@@ -9,9 +9,8 @@
 }
 .logo{
     position: absolute;
-    /* margin: 40px 70px; */
-    left: 70px;
-    top: 50px;
+    left: 50px;
+    top: 30px;
 }
 .logo a{
     text-decoration: none;
@@ -23,8 +22,8 @@
 }
 .searcharea{
     position: fixed;
-    right: 60px;
-    top: 50px;
+    right: 30px;
+    top: 35px;
     height: 40px;
     border: 2px solid rgba(240, 247, 99, 0.648);
     background-color: white;
@@ -92,7 +91,7 @@
 }
 .iconarea{
     position: fixed;
-    left: 30px;
+    left: 15px;
     top: 50%;
     transform: translate(0%, -50%);
     border-radius: 25px;
@@ -243,6 +242,7 @@
     align-items: center;
     justify-items: center;
     margin: 50px auto;
+    text-align: center;
 }
 .noti .notiin{
     box-shadow: 0px 0px 20px rgba(88, 88, 88, 0.496);
@@ -277,4 +277,60 @@ footer div{
 }
 footer div span{
     color: rgb(83, 252, 27);
+}
+
+@media (max-width: 565px) {
+    .logo{
+        left: 10px;
+        top: 20px;
+    }
+    .logo a{
+        font-size:5vmin;
+    }
+    .searcharea{
+        right: 10px;
+        top: 20px;
+        transform: scale(.80);
+    }
+    .section1{
+        width: 80%;
+    }
+    .section1btn{
+        width: fit-content;
+    }
+    .section1btn h1{
+        font-size:6vmin;
+    }
+    .section1btn h2{
+        font-size:5vmin;
+        line-height: 5%;
+    }
+    .btn{
+        transform: scale(.8);
+    }
+    .iconarea{
+        transform: scale(80%);
+        left: 5px;
+        top: 50vh;
+        transform: translateY(-50%);
+    }
+    .card{
+        height: 180px;
+        width: 120px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .text{
+        width: 80%;
+    }
+    .text img{
+        margin-top: 20px;
+    }
+    /* .noti{
+        transform: scale(.8);
+    } */
+    .noti .notiin{
+        width: 90%;
+    }
 }
